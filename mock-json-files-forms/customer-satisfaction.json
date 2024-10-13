@@ -1,0 +1,72 @@
+{
+  "title": "Customer Satisfaction Survey",
+  "description": "Help us improve our service by providing your feedback.",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "overallSatisfaction",
+          "title": "How satisfied are you with our product/service overall?",
+          "isRequired": true,
+          "rateMax": 5
+        },
+        {
+          "type": "radiogroup",
+          "name": "recommendationLikelihood",
+          "title": "How likely are you to recommend our product/service to others?",
+          "isRequired": true,
+          "choices": ["Very Unlikely", "Unlikely", "Neutral", "Likely", "Very Likely"]
+        },
+        {
+          "type": "checkbox",
+          "name": "productFeatures",
+          "title": "Which features do you find most valuable?",
+          "isRequired": true,
+          "choices": ["Ease of use", "Reliability", "Performance", "Customer support", "Price"]
+        },
+        {
+          "type": "text",
+          "name": "lastPurchaseDate",
+          "title": "When did you last purchase our product/service?",
+          "inputType": "date"
+        },
+        {
+          "type": "dropdown",
+          "name": "customerType",
+          "title": "What type of customer are you?",
+          "choices": ["Individual", "Small Business", "Enterprise", "Government", "Non-profit"]
+        },
+        {
+          "type": "rating",
+          "name": "customerSupportRating",
+          "title": "How would you rate our customer support?",
+          "isRequired": true,
+          "rateMax": 5
+        },
+        {
+          "type": "boolean",
+          "name": "willRepurchase",
+          "title": "Do you plan to purchase from us again in the future?"
+        },
+        {
+          "type": "text",
+          "name": "improvementSuggestion",
+          "title": "What is one thing we could do to improve your experience?"
+        },
+        {
+          "type": "radiogroup",
+          "name": "competitorComparison",
+          "title": "How do we compare to our competitors?",
+          "choices": ["Much worse", "Worse", "About the same", "Better", "Much better"]
+        },
+        {
+          "type": "comment",
+          "name": "additionalFeedback",
+          "title": "Do you have any additional feedback for us?"
+        }
+      ]
+    }
+  ]
+}
