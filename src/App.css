@@ -1,38 +1,144 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.sd-table__cell--edit-btn {
+    width: 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.sd-matrixdynamic__footer {
+    display: none !important;
+}
+
+.edit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.delete-btn {
+    display: none !important;
+}
+
+.sd-html.sd-element--nested.sd-html--nested {
+    display: flex;
+    justify-content: center;
+}
+
+.sd-html button {
+    background-color: #19b394 !important;
+    color: white !important;
+}
+
+.sd-html button:hover {
+    color: #19b394 !important;
+    background-color: white !important;
+}
+
+.sd-btn.preview-button {
+    margin-right: 30px;
+}
+
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.custom-table thead {
+    background-color: #19b394;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.custom-table thead th {
+    padding: 14px 20px;
+    text-align: left;
+}
+
+.custom-table tbody tr {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+.custom-table tbody td {
+    padding: 12px 20px;
+    color: #333;
+}
+
+.custom-table tbody td:first-child {
+    font-weight: bold;
+    color: #555;
+}
+
+.custom-table tbody td:last-child {
+    text-align: right;
+}
+
+/* Add rounded corners */
+.custom-table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.custom-table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.custom-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.custom-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
 }

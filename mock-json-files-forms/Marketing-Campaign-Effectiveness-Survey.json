@@ -1,0 +1,73 @@
+{
+  "title": "Marketing Campaign Effectiveness Survey",
+  "description": "Help us evaluate the impact of our recent marketing campaign.",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "campaignAwareness",
+          "title": "Are you aware of our recent marketing campaign?",
+          "isRequired": true,
+          "choices": ["Yes", "No", "Not sure"]
+        },
+        {
+          "type": "checkbox",
+          "name": "marketingChannels",
+          "title": "Through which channels did you see our marketing campaign? (Select all that apply)",
+          "choices": ["Social Media", "Email", "TV", "Radio", "Print", "Online Ads", "Other"]
+        },
+        {
+          "type": "rating",
+          "name": "campaignAppeal",
+          "title": "How appealing did you find the campaign?",
+          "isRequired": true,
+          "rateMax": 5
+        },
+        {
+          "type": "text",
+          "name": "brandRecall",
+          "title": "What is the main message you remember from the campaign?"
+        },
+        {
+          "type": "dropdown",
+          "name": "purchaseIntent",
+          "title": "How likely are you to purchase our product/service after seeing the campaign?",
+          "choices": ["Very Unlikely", "Unlikely", "Neutral", "Likely", "Very Likely"]
+        },
+        {
+          "type": "rating",
+          "name": "brandPerception",
+          "title": "How has this campaign affected your perception of our brand?",
+          "isRequired": true,
+          "rateMin": -5,
+          "rateMax": 5,
+          "minRateDescription": "Very Negatively",
+          "maxRateDescription": "Very Positively"
+        },
+        {
+          "type": "boolean",
+          "name": "sharedCampaign",
+          "title": "Did you share any of our campaign content with others?"
+        },
+        {
+          "type": "text",
+          "name": "competitorComparison",
+          "title": "How does this campaign compare to those of our competitors?"
+        },
+        {
+          "type": "radiogroup",
+          "name": "callToActionEffectiveness",
+          "title": "How clear was the call-to-action in the campaign?",
+          "choices": ["Not at all clear", "Somewhat unclear", "Neutral", "Somewhat clear", "Very clear"]
+        },
+        {
+          "type": "comment",
+          "name": "campaignFeedback",
+          "title": "Please provide any additional feedback about the marketing campaign:"
+        }
+      ]
+    }
+  ]
+}

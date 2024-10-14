@@ -1,0 +1,71 @@
+{
+  "title": "Customer Support Quality Survey",
+  "description": "Help us improve our customer support by sharing your recent experience.",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "overallSatisfaction",
+          "title": "How satisfied were you with your recent customer support experience?",
+          "isRequired": true,
+          "rateMax": 5
+        },
+        {
+          "type": "radiogroup",
+          "name": "supportChannel",
+          "title": "Which support channel did you use?",
+          "isRequired": true,
+          "choices": ["Phone", "Email", "Live Chat", "Social Media", "Help Center/FAQ"]
+        },
+        {
+          "type": "text",
+          "name": "responseTime",
+          "title": "How long did you wait for a response? (in minutes)",
+          "inputType": "number"
+        },
+        {
+          "type": "checkbox",
+          "name": "supportQuality",
+          "title": "Which aspects of the support were satisfactory? (Select all that apply)",
+          "choices": ["Politeness", "Knowledge", "Problem Resolution", "Follow-up", "Clarity of Explanation"]
+        },
+        {
+          "type": "dropdown",
+          "name": "problemComplexity",
+          "title": "How complex was your issue?",
+          "choices": ["Very Simple", "Simple", "Moderate", "Complex", "Very Complex"]
+        },
+        {
+          "type": "boolean",
+          "name": "issueResolved",
+          "title": "Was your issue fully resolved?"
+        },
+        {
+          "type": "rating",
+          "name": "agentKnowledge",
+          "title": "How knowledgeable was the support agent?",
+          "isRequired": true,
+          "rateMax": 5
+        },
+        {
+          "type": "text",
+          "name": "agentName",
+          "title": "If you remember, what was the name of the support agent?"
+        },
+        {
+          "type": "radiogroup",
+          "name": "recommendSupport",
+          "title": "How likely are you to recommend our customer support to others?",
+          "choices": ["Very Unlikely", "Unlikely", "Neutral", "Likely", "Very Likely"]
+        },
+        {
+          "type": "comment",
+          "name": "supportFeedback",
+          "title": "Please provide any additional feedback about your customer support experience:"
+        }
+      ]
+    }
+  ]
+}

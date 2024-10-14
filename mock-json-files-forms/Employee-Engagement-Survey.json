@@ -1,0 +1,72 @@
+{
+  "title": "Employee Engagement Survey",
+  "description": "Your feedback helps us create a better workplace for everyone.",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "jobSatisfaction",
+          "title": "How satisfied are you with your job?",
+          "isRequired": true,
+          "rateMax": 5
+        },
+        {
+          "type": "radiogroup",
+          "name": "workLifeBalance",
+          "title": "How would you rate your work-life balance?",
+          "isRequired": true,
+          "choices": ["Very Poor", "Poor", "Average", "Good", "Excellent"]
+        },
+        {
+          "type": "checkbox",
+          "name": "companyBenefits",
+          "title": "Which company benefits do you value most?",
+          "isRequired": true,
+          "choices": ["Health Insurance", "Retirement Plan", "Paid Time Off", "Professional Development", "Flexible Work Hours"]
+        },
+        {
+          "type": "text",
+          "name": "yearsAtCompany",
+          "title": "How many years have you been with the company?",
+          "inputType": "number"
+        },
+        {
+          "type": "dropdown",
+          "name": "department",
+          "title": "Which department do you work in?",
+          "choices": ["Sales", "Marketing", "Engineering", "Customer Support", "HR", "Finance", "Other"]
+        },
+        {
+          "type": "rating",
+          "name": "managerRelationship",
+          "title": "How would you rate your relationship with your direct manager?",
+          "isRequired": true,
+          "rateMax": 5
+        },
+        {
+          "type": "boolean",
+          "name": "careerGrowth",
+          "title": "Do you see opportunities for career growth within the company?"
+        },
+        {
+          "type": "text",
+          "name": "improvementSuggestion",
+          "title": "What is one thing the company could do to improve employee engagement?"
+        },
+        {
+          "type": "radiogroup",
+          "name": "companyDirection",
+          "title": "How confident are you in the company's overall direction?",
+          "choices": ["Not at all confident", "Slightly confident", "Moderately confident", "Very confident", "Extremely confident"]
+        },
+        {
+          "type": "comment",
+          "name": "additionalFeedback",
+          "title": "Do you have any additional feedback or suggestions for the company?"
+        }
+      ]
+    }
+  ]
+}
